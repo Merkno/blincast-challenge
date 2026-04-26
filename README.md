@@ -17,7 +17,7 @@ Sistema simplificado com servidor HTTP e cliente em Python.
 
 ## Como rodar
 
-Execute o projeto com:
-
-```bash
-python app.py
+git clone ...
+cd ...
+pip install -r requirements.txt
+python server.py
