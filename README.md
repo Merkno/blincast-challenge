@@ -17,7 +17,9 @@ Sistema simplificado com servidor HTTP e cliente em Python.
 
 ## Como rodar
 
+```
 - git clone https://github.com/Merkno/blincast-challenge
-- cd blincast-challenge 
-- pip install -r requirements.txt 
+- cd blincast-challenge
+- pip install -r requirements.txt
 - python server.py
+```
