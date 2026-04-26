@@ -17,7 +17,7 @@ Sistema simplificado com servidor HTTP e cliente em Python.
 
 ## Como rodar
 
-### 1. Criar ambiente virtual
+Execute o projeto com:
 
 ```bash
 python app.py
