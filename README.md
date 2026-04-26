@@ -20,5 +20,4 @@ Sistema simplificado com servidor HTTP e cliente em Python.
 ### 1. Criar ambiente virtual
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+python app.py
