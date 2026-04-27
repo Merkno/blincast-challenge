@@ -17,8 +17,9 @@ Sistema simplificado com servidor HTTP e cliente em Python.
 
 ## Como rodar
 
-### 1. Criar ambiente virtual
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
+```
+- git clone https://github.com/Merkno/blincast-challenge
+- cd blincast-challenge
+- pip install -r requirements.txt
+- python server.py
+```
