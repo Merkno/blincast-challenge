@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import json
 import os
 
@@ -18,6 +18,9 @@ def save_data(data):
     with open(DB_FILE, "w") as file:
         json.dump(data, file, indent=4)
 
+@app.route("/")
+def home():
+    return render_template("index.html")
 
 @app.route("/document", methods=["POST"])
 def document():

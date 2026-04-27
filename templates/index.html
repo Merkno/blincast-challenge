@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blincast Client</title>
+</head>
+<body>
+<h1>Blincast Client</h1>
+
+<form id="form">
+<label>Action:</label>
+<select id="action">
+<option value="create">create</option>
+<option value="update">update</option>
+<option value="delete">delete</option>
+</select>
+
+<br><br>
+
+<label>Key:</label>
+<input type="text" id="key" required>
+
+<br><br>
+
+<label>Value:</label>
+<input type="text" id="value">
+
+<br><br>
+
+<button type="submit">Send</button>
+</form>
+
+<pre id="result"></pre>
+
+<script>
+document.getElementById("form").addEventListener("submit", async function(e){
+    e.preventDefault();
+
+    const action = document.getElementById("action").value;
+    const key = document.getElementById("key").value;
+    const value = document.getElementById("value").value;
+
+    let data = { action, key };
+
+    if (action !== "delete") {
+        data.value = value;
+    }
+
+    const response = await fetch("/document", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+    document.getElementById("result").textContent =
+        JSON.stringify(result, null, 2);
+});
+</script>
+
+</body>
+</html>
