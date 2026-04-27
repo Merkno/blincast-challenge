@@ -11,7 +11,8 @@ Sistema simplificado com servidor HTTP e cliente em Python.
 ## Estrutura
 
 - `server.py` -> Servidor HTTP
-- `client.py` -> Cliente interativo
+- `client.py` -> Cliente interativo via terminal
+- `templates/index.html` -> Cliente web em HTML
 - `database.json` -> Armazenamento local
 - `requirements.txt` -> Dependências
 
