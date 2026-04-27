@@ -7,6 +7,7 @@ Sistema simplificado com servidor HTTP e cliente em Python.
 - Python 3
 - Flask
 - Requests
+- HTML5
 
 ## Estrutura
 
